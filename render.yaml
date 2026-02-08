@@ -3,7 +3,7 @@ services:
     name: expense-tracker-api
     runtime: docker
     buildCommand: dotnet publish -c Release -o out
-    startCommand: dotnet out/ExpenseTracker.dll
+   
     envVars:
       - key: ConnectionStrings__DefaultConnection
         value: Server=tcp:your-sql-server.database.windows.net,1433;Database=ExpenseTracker;Trusted_connection=True;TrustServerCertificate=True;
