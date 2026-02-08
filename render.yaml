@@ -3,7 +3,7 @@ services:
     name: expense-tracker-api
     env: docker
     dockerfilePath: ./Dockerfile
-    buildCommand: dotnet publish ExpenseAPI/ExpenseAPI.csproj -c Release -o out
+  
     plan: free
     autoDeploy: true
     envVars:
