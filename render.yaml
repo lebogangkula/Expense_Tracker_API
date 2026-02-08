@@ -2,11 +2,10 @@ services:
   - type: web
     name: expense-tracker-api
     runtime: docker
-
     buildCommand: dotnet publish -c Release -o out
 
     envVars:
       - key: ConnectionStrings__DefaultConnection
-        value: Server=DESKTOP-N8TNQVH\SQLEXPRESS;Database=ExpenseDatabase;Trusted_Connection=True;TrustServerCertificate=True;
+        value: Server=DESKTOP-N8TNQVH\\SQLEXPRESS;Database=ExpenseDatabase;Trusted_Connection=True;TrustServerCertificate=True;
       - key: ASPNETCORE_ENVIRONMENT
         value: Production
