@@ -6,6 +6,6 @@ services:
 
     envVars:
       - key: ConnectionStrings__DefaultConnection
-        value: Server=tcp:your-sql-server.database.windows.net,1433;Database=ExpenseTracker;Trusted_connection=True;TrustServerCertificate=True;
+        value: Server=DESKTOP-N8TNQVH\\SQLEXPRESS;Database=ExpenseDatabase;Trusted_Connection=True;TrustServerCertificate=True;
       - key: ASPNETCORE_ENVIRONMENT
         value: Production
