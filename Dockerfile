@@ -3,7 +3,7 @@ FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /src
 COPY . .
 RUN dotnet restore "ExpenseAPI.csproj"
-RUN dotnet publish "Endpoints/ExpenseAPI.csproj" -c Release -o /out
+RUN dotnet publish "ExpenseAPI.csproj" -c Release -o /out
 
 # Runtime
 FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS runtime
