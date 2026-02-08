@@ -1,9 +1,11 @@
 services:
   - type: web
     name: expense-tracker-api
-    runtime: docker
-    buildCommand: dotnet publish -c Release -o out
-
+    env: docker
+    dockerfilePath: ./Dockerfile
+  
+    plan: free
+    autoDeploy: true
     envVars:
       - key: ConnectionStrings__DefaultConnection
         value: Server=DESKTOP-N8TNQVH\\SQLEXPRESS;Database=ExpenseDatabase;Trusted_Connection=True;TrustServerCertificate=True;
